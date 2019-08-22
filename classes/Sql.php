@@ -1,4 +1,4 @@
-<<?php 
+<?php 
 class Sql extends PDO {
 
 	private $conn;
@@ -13,14 +13,14 @@ class Sql extends PDO {
 
 		foreach ($parameters as $key => $value) {
 
-			$this->setParam($key , $value);
+			$this->setParam($statments ,$key , $value);
 		}
 	}
 
 
 	private function setParam($statments , $key , $value) {
 
-			$statments->bindParan($key , $value);
+			$statments->bindParam($key , $value);
 	}
 
 
