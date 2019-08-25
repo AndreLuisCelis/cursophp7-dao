@@ -31,7 +31,7 @@ echo json_encode($search);*/
 
 /* verifica o login e senha e retorna o usuario */
 $usuario = new Usuario();
-$usuario->login("Gilma","1234567890");
+$usuario->login("Gilmar","1234567890");
 
 echo $usuario;
 
